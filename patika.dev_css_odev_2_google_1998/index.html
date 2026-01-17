@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Meta etiketleri: karakter kodlaması ve responsive ayarları -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search the web using Google!">
+    <meta name="keywords" content="Google, search, search engine">
+    <title>Google!</title>
+    <!-- CSS stil dosyası bağlantısı -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<!-- Ana sayfa gövdesi: beyaz arka plan rengi -->
+<body bgcolor="#FFFFFF">
+
+<!-- Arama formu: GET metodu ile form gönderimi -->
+<form method="GET" action="https://www.google.com/search">
+<!-- Logo bölümü: Google logosu ortalanmış şekilde -->
+<center>
+<img src="img/google.jpg" width="351" height="113" alt="Google!">
+</center>
+
+<!-- Ana içerik tablosu: 90% genişlik, ortalanmış -->
+<center>
+<table border="0" width="90%">
+<tbody>
+<!-- Arama bölümü: açık gri arka plan (#EEEEEE), 3 sütun genişliğinde -->
+<tr>
+<td bgcolor="#EEEEEE" colspan="3">
+<center>
+Search the web using Google! <br>
+<!-- Arama kutusu: 40 karakter genişliğinde metin girişi -->
+<input type="text" name="q" value="" size="40" maxlength="256" autocomplete="off"><br>
+<!-- Arama butonları: Google Search ve I'm feeling lucky -->
+<input type="submit" value="Google Search">
+<input type="submit" name="sa" value="I'm feeling lucky"><br>
+</center>
+</td>
+</tr>
+<!-- Bilgi sütunları: üç farklı teal tonunda sütun yapısı -->
+<tr>
+<!-- Sol sütun: açık teal (#7EE5DA), özel aramalar bölümü -->
+<td width="37%" bgcolor="#7EE5DA"><center>
+Special Searches<br>
+<a href="https://www.google.com/stanford">Stanford Search</a><br>
+<a href="https://www.google.com/linux">Linux Search</a><br>
+</center>
+</td>
+<!-- Orta sütun: orta teal (#70CCC2), yardım ve bilgi linkleri -->
+<td bgcolor="#70CCC2">
+<center>
+<font size="-1">
+<a href="https://www.google.com/help">Help!</a> <br>
+<a href="https://www.google.com/about">About Google!</a> <br>
+<a href="https://www.google.com/company">Company Info</a> <br>
+<a href="https://www.google.com/logos">Google! Logos</a> <br>
+</font>
+</center>
+</td>
+<!-- Sağ sütun: koyu teal (#62B3AA), e-posta abonelik formu -->
+<td align="right" bgcolor="#62B3AA">
+<center>
+<font size="-1">
+Get Google! <br> updates monthly: <br>
+<!-- Gizli form alanı: liste adı -->
+<input type="hidden" name="listname" value="google-friends">
+<!-- E-posta giriş kutusu -->
+<input type="text" name="emailaddr" value="your e-mail" size="20"> <br>
+<!-- Abonelik butonu -->
+<input type="submit" name="SubmitAction" value="Subscribe"> 
+&nbsp;&nbsp;
+<font size="-1"><a href="https://www.google.com/archive">Archive</a></font>      
+</font>
+</center>
+</td>
+
+</tr></tbody></table>
+</center>
+
+<!-- Telif hakkı bilgisi: sayfa alt kısmında -->
+<p>
+</p><center><font size="-1">Copyright ©1998 Google Inc.</font></center>
+</form>
+
+</body>
+</html>
