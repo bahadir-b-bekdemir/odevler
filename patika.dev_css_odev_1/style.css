@@ -1,0 +1,215 @@
+/* Genel CSS Reset - Tüm margin ve padding değerlerini sıfırlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body - Sayfa arka planı ve genel ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f4f8;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header - Sayfa başlığı bölümü */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Ana başlık stili */
+header h1 {
+    color: #c41e3a;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Navigasyon menüsü */
+nav {
+    margin-top: 20px;
+}
+
+/* Navigasyon linkleri */
+nav a {
+    color: #0066cc;
+    text-decoration: underline;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+/* Navigasyon link hover efekti */
+nav a:hover {
+    color: #004499;
+}
+
+/* Ana içerik bölümü */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section - İçerik bölümleri */
+section {
+    margin-bottom: 30px;
+}
+
+/* H2 başlık stili */
+h2 {
+    color: #8b008b;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* H3 başlık stili */
+h3 {
+    color: #ff8c00;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0 15px 0;
+}
+
+/* Paragraf stili */
+p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Ana içerik linkleri */
+main a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* Ana içerik link hover efekti */
+main a:hover {
+    color: #004499;
+}
+
+/* Liste stili */
+ul {
+    list-style-position: inside;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Liste öğeleri */
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Ürün listesi container */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Ürün kartı stili */
+.product-item {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+/* Ürün görselleri */
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Ürün başlıkları */
+.product-item h3 {
+    color: #333;
+    margin: 10px 0;
+    font-size: 1.3em;
+}
+
+/* Ürün açıklamaları */
+.product-item p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Fiyat bölümü */
+.price {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Eski fiyat (üstü çizili) */
+.old-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 0.9em;
+}
+
+/* Yeni fiyat (indirimli) */
+.new-price {
+    color: #c41e3a;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Satın Al butonu */
+.discount {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Footer - Alt bilgi bölümü */
+footer {
+    text-align: center;
+    margin: 40px auto 0;
+    max-width: 800px;
+    padding: 25px 30px;
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.95em;
+}
+
+/* Footer paragrafları */
+footer p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Footer ilk paragraf */
+footer p:first-child {
+    margin-top: 0;
+}
+
+/* Footer son paragraf (telif hakkı) */
+footer p:last-child {
+    margin-bottom: 0;
+    font-size: 0.85em;
+    color: #888;
+    font-style: italic;
+}
+
