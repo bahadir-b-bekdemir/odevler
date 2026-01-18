@@ -1,0 +1,346 @@
+/* ============================================
+   GENEL STİLLER
+   ============================================ */
+
+/* Body stilleri - margin ve padding sıfırlama */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: #202124;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================
+   ÜST NAVİGASYON (HEADER)
+   ============================================ */
+
+/* Üst navigasyon container */
+.top-nav {
+  display: flex;
+  justify-content: space-between; /* Sol ve sağ arasında boşluk */
+  align-items: center;
+  padding: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 13px;
+}
+
+/* Sol taraf navigasyon */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Elemanlar arası boşluk */
+}
+
+/* Sağ taraf navigasyon */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Elemanlar arası boşluk */
+}
+
+/* Navigasyon linkleri */
+.nav-link {
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  padding: 5px;
+  line-height: 24px;
+  transition: text-decoration 0.2s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Apps ikonu */
+.apps-link {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, border-radius 0.2s ease;
+}
+
+.apps-icon {
+  width: 20px;
+  height: 20px;
+  fill: #5f6368;
+  opacity: 1;
+}
+
+.apps-link:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* Sign in butonu */
+.sign-in-btn {
+  background-color: #1a73e8;
+  color: white;
+  padding: 9px 23px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid transparent;
+  line-height: 16px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: #1765cc;
+  box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3), 0 1px 3px 1px rgba(66, 133, 244, 0.15);
+  text-decoration: none;
+}
+
+/* ============================================
+   ANA İÇERİK
+   ============================================ */
+
+/* Ana içerik container */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 89px;
+  padding-bottom: 290px;
+}
+
+/* Logo container */
+.logo-container {
+  margin-bottom: 30px;
+}
+
+/* Google logosu */
+.google-logo {
+  width: 272px;
+  height: 92px;
+  object-fit: contain;
+}
+
+/* ============================================
+   ARAMA KUTUSU
+   ============================================ */
+
+/* Arama container */
+.search-container {
+  width: 100%;
+  max-width: 584px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Arama kutusu */
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  height: 44px;
+  margin: 0 auto;
+  width: auto;
+  max-width: 584px;
+  background: #fff;
+  box-shadow: none;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* Arama kutusuna hover efekti */
+.search-box:hover {
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+/* Arama kutusuna focus efekti */
+.search-box:focus-within {
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+/* Arama ikonu wrapper */
+.search-icon-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  padding-right: 13px;
+  height: 20px;
+  width: 20px;
+}
+
+/* Arama ikonu */
+.search-icon {
+  width: 20px;
+  height: 20px;
+  fill: #9aa0a6;
+  display: block;
+}
+
+/* Arama input alanı */
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: arial, sans-serif;
+  line-height: 34px;
+  height: 34px;
+  padding: 0;
+  margin: 0;
+  width: 480px;
+  background: transparent;
+}
+
+/* Sesle arama ikonu wrapper */
+.voice-icon-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  padding-right: 14px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* Sesle arama ikonu */
+.voice-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* ============================================
+   ARAMA BUTONLARI
+   ============================================ */
+
+/* Buton container */
+.button-container {
+  padding-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+}
+
+/* Arama butonu */
+.search-btn,
+.lucky-btn {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* Butonlara hover efekti */
+.search-btn:hover,
+.lucky-btn:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+/* Butonlara focus efekti */
+.search-btn:focus,
+.lucky-btn:focus {
+  border: 1px solid #4285f4;
+  outline: none;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+/* Footer container */
+.footer {
+  background: #f2f2f2;
+  border-top: 1px solid #dadce0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Footer içerik */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* Footer sol taraf */
+.footer-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Footer sağ taraf */
+.footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* Footer linkleri */
+.footer-link {
+  color: #70757a;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  white-space: nowrap;
+  transition: text-decoration 0.2s ease;
+}
+
+/* Footer linklerine hover efekti */
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   RESPONSIVE TASARIM
+   ============================================ */
+
+/* Küçük ekranlar için */
+@media (max-width: 600px) {
+  .google-logo {
+    width: 200px;
+    height: auto;
+  }
+  
+  .search-container {
+    max-width: 90%;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-left,
+  .footer-right {
+    justify-content: center;
+  }
+}
