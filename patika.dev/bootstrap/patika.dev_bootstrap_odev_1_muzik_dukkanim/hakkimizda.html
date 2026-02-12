@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!-- Meta etiketleri: Sayfa karakter kodlaması ve responsive ayarları -->
+  <meta charset="UTF-8">
+  <!-- Bootstrap responsive için gerekli viewport ayarı -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakkımızda | B - Cube Müzik</title>
+  
+  <!-- Bootstrap 5.3.2 CSS kütüphanesi CDN üzerinden yükleniyor -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons: Bootstrap'in resmi ikon kütüphanesi -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Özel CSS stilleri -->
+  <style>
+    /* Sayfa arka plan rengi */
+    body { background-color: #E9ECEF; }
+    
+    /* Navbar'a gölge efekti */
+    .navbar { box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+    
+    /* Bootstrap card component'i için özel stiller */
+    .card {
+      border: none;
+      border-radius: 0.5rem;
+      overflow: hidden; /* Taşan içeriği gizler */
+      background-color: #fff;
+    }
+    
+    /* Card header için özel border-radius - Üst köşeleri yuvarlatır */
+    .card-header { border-radius: 0.5rem 0.5rem 0 0 !important; }
+  </style>
+</head>
+<body>
+  <!-- ============================================ -->
+  <!-- NAVBAR (Navigasyon Menüsü) - Bootstrap Component -->
+  <!-- ============================================ -->
+  <!-- 
+    Bootstrap Navbar Component:
+    - navbar-expand-lg: Large ekranlarda yatay menü, küçük ekranlarda hamburger menü
+    - navbar-dark: Açık renkli metin (koyu arka planla)
+    - bg-dark: Koyu arka plan rengi
+  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">B - Cube | Müzik</a>
+      <!-- Hamburger menü butonu - Mobil cihazlarda görünür -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menü">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Ana Sayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="urunlerimiz.html">Ürünlerimiz</a>
+          </li>
+          <!-- active: Bu sayfa aktif olduğunu gösterir -->
+          <li class="nav-item">
+            <a class="nav-link active" href="hakkimizda.html">Hakkımızda</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- MAIN CONTENT AREA -->
+  <!-- ============================================ -->
+  <main class="container my-5">
+    <!-- Sayfa başlığı -->
+    <!-- mb-4: Margin bottom (1.5rem) -->
+    <h1 class="mb-4">Hakkımızda</h1>
+
+    <!-- ============================================ -->
+    <!-- HAKKIMIZDA İÇERİK KARTI -->
+    <!-- ============================================ -->
+    <!-- 
+      Bootstrap Card Component:
+      - card: Temel kart sınıfı
+      - shadow-sm: Küçük gölge efekti
+      - mb-4: Margin bottom (1.5rem)
+    -->
+    <div class="card shadow-sm mb-4">
+      <!-- card-body: Kart içeriği -->
+      <!-- p-4: Padding (1.5rem) - Mobil için -->
+      <!-- p-md-5: Medium ekranlarda padding (3rem) - Responsive padding -->
+      <div class="card-body p-4 p-md-5">
+        <!-- card-title: Kart başlığı için Bootstrap sınıfı -->
+        <div class="card-title">
+          <!-- h4: Bootstrap heading utility - h2 elementi ama h4 boyutunda -->
+          <!-- mb-3: Margin bottom (1rem) -->
+          <h2 class="h4 mb-3">B - Cube Müzik Kimdir?</h2>
+        </div>
+        
+        <!-- card-text: Kart metni için Bootstrap sınıfı -->
+        <p class="card-text">
+          B - Cube Müzik, 2010 yılından bu yana müzik enstrümanları satışı ve müşteri memnuniyeti odaklı hizmet veren bir markadır. Amacımız, her yaş ve seviyeden müzikseverlere kaliteli, güvenilir ve uygun fiyatlı enstrümanlar sunmaktır.
+        </p>
+        <p class="card-text">
+          Gitar, piyano, flüt ve daha birçok kategoride geniş ürün yelpazemizle hem hobi hem de profesyonel kullanım için en doğru seçenekleri bir arada bulabilirsiniz. Tüm ürünlerimizde 2 yıl resmi garanti ve ücretsiz kargo imkânı sunuyoruz.
+        </p>
+        
+        <!-- hr: Yatay çizgi ayırıcı -->
+        <!-- my-4: Margin top ve bottom (1.5rem) -->
+        <hr class="my-4">
+        
+        <!-- h5: Bootstrap heading utility - h3 elementi ama h5 boyutunda -->
+        <h3 class="h5 mb-3">Misyonumuz</h3>
+        <!-- text-muted: Soluk gri renk -->
+        <p class="card-text text-muted">
+          Müziği herkes için erişilebilir kılmak; kaliteli ürün ve dürüst hizmetle müşterilerimizin yanında olmak.
+        </p>
+        
+        <h3 class="h5 mb-3 mt-4">İletişim</h3>
+        
+        <!-- ============================================ -->
+        <!-- Bootstrap List Group Component -->
+        <!-- ============================================ -->
+        <!-- 
+          list-group: Bootstrap list group component - liste öğeleri için
+          list-group-flush: Kenarlıkları kaldırır, kart içinde kullanım için
+          mb-0: Margin bottom sıfır
+        -->
+        <ul class="list-group list-group-flush mb-0">
+          <!-- 
+            list-group-item: Liste öğesi
+            bg-transparent: Şeffaf arka plan
+            px-0: Padding left ve right sıfır
+          -->
+          <li class="list-group-item bg-transparent px-0">Adres: Örnek Mah. Müzik Cad. No: 1, İstanbul</li>
+          <li class="list-group-item bg-transparent px-0">Telefon: 0212 XXX XX XX</li>
+          <li class="list-group-item bg-transparent px-0">E-posta: info@b-cube.xyz</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- EK BİLGİ BÖLÜMÜ - Grid System ile 2 Kart -->
+    <!-- ============================================ -->
+    <!-- 
+      row: Bootstrap grid satırı
+      g-4: Gap utility - grid öğeleri arası boşluk (1.5rem)
+    -->
+    <div class="row g-4">
+      <!-- 
+        col-md-6: Medium ekranlarda (≥768px) 6/12 genişlik = 2 sütun
+        Küçük ekranlarda tam genişlik (12/12)
+      -->
+      <div class="col-md-6">
+        <!-- Bootstrap Card Component -->
+        <!-- shadow-sm: Küçük gölge -->
+        <!-- h-100: Height 100% - eşit yükseklik için -->
+        <div class="card shadow-sm h-100">
+          <!-- card-header: Kart başlık alanı -->
+          <!-- bg-dark: Koyu arka plan -->
+          <!-- text-white: Beyaz metin -->
+          <!-- py-3: Padding top ve bottom (1rem) -->
+          <!-- Bootstrap Icons: bi-star-fill ikonu -->
+          <!-- me-2: Margin end (sağ) - 0.5rem -->
+          <div class="card-header bg-dark text-white py-3"><i class="bi bi-star-fill me-2"></i>Neden Bizi Tercih Etmelisiniz?</div>
+          
+          <!-- list-group-flush: Kenarlıkları kaldırır -->
+          <div class="list-group list-group-flush">
+            <!-- Bootstrap Icons ile renkli ikonlar -->
+            <!-- text-success: Yeşil renk -->
+            <!-- text-primary: Mavi renk -->
+            <!-- text-secondary: Gri renk -->
+            <!-- text-info: Açık mavi renk -->
+            <div class="list-group-item"><i class="bi bi-shield-check text-success me-2"></i>2 yıl garanti</div>
+            <div class="list-group-item"><i class="bi bi-truck text-primary me-2"></i>Ücretsiz kargo</div>
+            <div class="list-group-item"><i class="bi bi-tools text-secondary me-2"></i>Ücretsiz kurulum desteği</div>
+            <div class="list-group-item"><i class="bi bi-arrow-repeat text-info me-2"></i>Kolay iade ve değişim</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- İkinci kart - Müşteri Memnuniyeti -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <!-- Bootstrap Icons: bi-graph-up-arrow ikonu -->
+          <div class="card-header bg-dark text-white py-3"><i class="bi bi-graph-up-arrow me-2"></i>Müşteri Memnuniyeti</div>
+          <div class="card-body">
+            <!-- small: Küçük metin boyutu -->
+            <!-- text-muted: Soluk gri renk -->
+            <!-- mb-2: Margin bottom (0.5rem) -->
+            <p class="small text-muted mb-2">Müşteri memnuniyet oranımız</p>
+            
+            <!-- ============================================ -->
+            <!-- Bootstrap Progress Bar Component -->
+            <!-- ============================================ -->
+            <!-- 
+              progress: Bootstrap progress bar component
+              mb-2: Margin bottom (0.5rem)
+              style="height: 1.5rem": Özel yükseklik ayarı
+            -->
+            <div class="progress mb-2" style="height: 1.5rem;">
+              <!-- 
+                progress-bar: Progress bar içindeki doluluk çubuğu
+                bg-success: Yeşil arka plan rengi
+                role="progressbar": Erişilebilirlik için ARIA rolü
+                style="width: 98%": Doluluk yüzdesi
+                aria-valuenow: Mevcut değer
+                aria-valuemin: Minimum değer
+                aria-valuemax: Maksimum değer
+              -->
+              <div class="progress-bar bg-success" role="progressbar" style="width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">98%</div>
+            </div>
+            
+            <p class="small text-muted mb-0">Teslimat zamanında ulaşma</p>
+            <!-- İkinci progress bar -->
+            <!-- bg-info: Açık mavi arka plan rengi -->
+            <div class="progress" style="height: 1.5rem;">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <!-- 
+    bg-dark: Koyu arka plan
+    text-light: Açık renkli metin
+    py-4: Padding top ve bottom (1.5rem)
+    mt-5: Margin top (3rem)
+  -->
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0 small">© 2026 B - Cube | Müzik. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
