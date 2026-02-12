@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- 
+  Google Ana Sayfası Klonu
+  Bu proje Google'ın ana sayfasının HTML ve CSS ile yapılmış bir kopyasıdır.
+  Eğitim amaçlı olarak oluşturulmuştur.
+-->
+<html lang="en">
+  <head>
+    <!-- Meta etiketleri - sayfa karakter kodlaması ve görünüm ayarları -->
+    <meta charset="UTF-8" />
+    <!-- Viewport meta etiketi - responsive tasarım için gerekli -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta description - SEO için -->
+    <meta name="description" content="Google ana sayfası klonu - Eğitim amaçlı HTML ve CSS projesi" />
+    
+    <!-- CSS dosyası bağlantısı -->
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- Sayfa başlığı - tarayıcı sekmesinde görünecek -->
+    <title>Google</title>
+  </head>
+  <body>
+    <!-- 
+      ÜST NAVİGASYON (HEADER)
+      Sayfanın en üstünde bulunan navigasyon menüsü
+      Sol tarafta "About" ve "Store" linkleri
+      Sağ tarafta "Gmail", "Images", Apps ikonu ve "Sign in" butonu
+    -->
+    <header class="top-nav">
+      <!-- Sol taraf navigasyon linkleri -->
+      <div class="nav-left">
+        <!-- About sayfasına yönlendiren link -->
+        <a href="https://about.google/" class="nav-link">About</a>
+        <!-- Google Store sayfasına yönlendiren link -->
+        <a href="https://store.google.com/" class="nav-link">Store</a>
+      </div>
+      
+      <!-- Sağ taraf navigasyon linkleri ve butonlar -->
+      <div class="nav-right">
+        <!-- Gmail sayfasına yönlendiren link -->
+        <a href="https://mail.google.com/" class="nav-link">Gmail</a>
+        <!-- Google Images sayfasına yönlendiren link -->
+        <a href="https://www.google.com/imghp" class="nav-link">Images</a>
+        
+        <!-- Google Apps menüsü ikonu - SVG formatında 9 noktalı grid ikonu -->
+        <a href="https://www.google.com/intl/en/about/products" class="nav-link apps-link">
+          <!-- SVG (Scalable Vector Graphics) - ölçeklenebilir vektör grafiği -->
+          <svg class="apps-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+            <!-- Apps ikonunun path (yol) tanımı - 9 karelik grid yapısı -->
+            <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+          </svg>
+        </a>
+        
+        <!-- Sign in butonu - mavi arka planlı, beyaz yazılı buton -->
+        <a href="#" class="sign-in-btn">Sign in</a>
+      </div>
+    </header>
+
+    <!-- 
+      ANA İÇERİK (MAIN CONTENT)
+      Sayfanın merkezinde bulunan ana içerik bölümü
+      Logo, arama kutusu ve arama butonlarını içerir
+    -->
+    <main class="main-content">
+      <!-- Google Logo Container -->
+      <div class="logo-container">
+        <!-- Google logosu - images klasöründen yüklenen PNG formatında logo -->
+        <img src="images/logo.png" alt="Google" class="google-logo" />
+      </div>
+
+      <!-- 
+        ARAMA KUTUSU (SEARCH BOX)
+        Kullanıcının arama yapabileceği input alanı
+        Sol tarafta arama ikonu, sağ tarafta sesle arama ikonu bulunur
+      -->
+      <div class="search-container">
+        <div class="search-box">
+          <!-- Arama İkonu - sol tarafta büyüteç simgesi -->
+          <div class="search-icon-wrapper">
+            <!-- SVG formatında arama (büyüteç) ikonu -->
+            <svg class="search-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+              <!-- Büyüteç ikonunun path tanımı -->
+              <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </svg>
+          </div>
+          
+          <!-- 
+            Arama Input Alanı
+            Kullanıcının arama terimini yazabileceği metin giriş alanı
+            autofocus özelliği sayfa yüklendiğinde otomatik olarak odaklanır
+          -->
+          <input type="text" class="search-input" name="q" placeholder="Search Google or type a URL" autofocus aria-label="Search" />
+          
+          <!-- Sesle Arama İkonu - sağ tarafta mikrofon simgesi -->
+          <div class="voice-icon-wrapper">
+            <!-- Sesle arama ikonu - images klasöründen yüklenen PNG formatında ikon -->
+            <img src="images/voicelogo.png" alt="Voice Search" class="voice-icon" />
+          </div>
+        </div>
+      </div>
+
+      <!-- 
+        ARAMA BUTONLARI (SEARCH BUTTONS)
+        Kullanıcının aramayı başlatabileceği iki buton
+        "Google Search" - normal arama yapar
+        "I'm Feeling Lucky" - rastgele bir sonuç sayfasına yönlendirir
+      -->
+      <div class="button-container">
+        <!-- Google Search butonu - normal arama işlemi için -->
+        <button type="button" class="search-btn">Google Search</button>
+        <!-- I'm Feeling Lucky butonu - rastgele sonuç için -->
+        <button type="button" class="lucky-btn">I'm Feeling Lucky</button>
+      </div>
+    </main>
+
+    <!-- 
+      FOOTER (ALT BİLGİ BÖLÜMÜ)
+      Sayfanın en altında bulunan bilgilendirme ve yasal linkler
+      Sol tarafta işletme ile ilgili linkler
+      Sağ tarafta gizlilik ve ayarlar ile ilgili linkler
+    -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Footer sol taraf - işletme ve reklam linkleri -->
+        <div class="footer-left">
+          <!-- Reklam sayfasına yönlendiren link -->
+          <a href="https://www.google.com/intl/en/ads/" class="footer-link">Advertising</a>
+          <!-- İşletme hizmetleri sayfasına yönlendiren link -->
+          <a href="https://www.google.com/services/" class="footer-link">Business</a>
+          <!-- Arama nasıl çalışır sayfasına yönlendiren link -->
+          <a href="https://www.google.com/search/howsearchworks/" class="footer-link">How Search works</a>
+        </div>
+        
+        <!-- Footer sağ taraf - gizlilik ve ayarlar linkleri -->
+        <div class="footer-right">
+          <!-- Gizlilik politikası sayfasına yönlendiren link -->
+          <a href="https://policies.google.com/privacy" class="footer-link">Privacy</a>
+          <!-- Kullanım şartları sayfasına yönlendiren link -->
+          <a href="https://policies.google.com/terms" class="footer-link">Terms</a>
+          <!-- Ayarlar sayfasına yönlendiren link -->
+          <a href="https://www.google.com/preferences" class="footer-link">Settings</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
