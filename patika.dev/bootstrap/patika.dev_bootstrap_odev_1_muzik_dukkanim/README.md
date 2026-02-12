@@ -1,6 +1,6 @@
-# Müzik Dükkanım - CSS Ödev 1
+# Müzik Dükkanım - Bootstrap Ödev 1
 
-Bu proje, Patika.dev CSS eğitimi kapsamında geliştirilmiş bir müzik aletleri e-ticaret sitesidir. Site, HTML ve CSS kullanılarak oluşturulmuş, modern ve kullanıcı dostu bir arayüze sahiptir.
+Bu proje, Patika.dev Bootstrap eğitimi kapsamında geliştirilmiş bir müzik aletleri e-ticaret sitesidir. Site, HTML, CSS ve Bootstrap 5 framework'ü kullanılarak oluşturulmuş, modern ve responsive bir arayüze sahiptir.
 
 ## 📋 Proje Hakkında
 
@@ -9,9 +9,11 @@ Müzik Dükkanım, müzik severlere kaliteli ve uygun fiyatlı müzik aletleri s
 ## 🎯 Özellikler
 
 - **3 Ana Sayfa**: Ana Sayfa, Ürünlerimiz ve Hakkımızda sayfaları
-- **Responsive Tasarım**: Modern ve kullanıcı dostu arayüz
-- **Ürün Kataloğu**: 6 farklı müzik aleti kategorisi
-- **Temiz Kod Yapısı**: Semantik HTML ve organize CSS
+- **Bootstrap 5 Framework**: Modern ve responsive tasarım
+- **Responsive Grid System**: Mobil, tablet ve masaüstü uyumlu
+- **Bootstrap Components**: Navbar, Cards, Buttons, Badges kullanımı
+- **Ürün Kataloğu**: 3 farklı müzik aleti kategorisi (Gitar, Piyano, Flüt)
+- **Temiz Kod Yapısı**: Semantik HTML ve Bootstrap utility classes
 
 ## 📁 Proje Yapısı
 
@@ -50,9 +52,11 @@ Ana sayfa, ziyaretçileri karşılayan hoş geldiniz mesajı ve sitede bulunan m
 
 **Özellikler:**
 
+- Bootstrap Navbar ile navigasyon menüsü
 - Hoş geldiniz mesajı
-- Müzik aletleri listesi (Gitar, Davul, Piyano, Keman, Saksafon, Flüt)
+- Müzik aletleri kategorileri (Gitar, Piyano, Flüt)
 - Ürünler sayfasına yönlendiren link
+- Responsive tasarım
 
 ### 2. Ürünlerimiz Sayfası (Products Page)
 
@@ -62,20 +66,29 @@ Ana sayfa, ziyaretçileri karşılayan hoş geldiniz mesajı ve sitede bulunan m
 
 **Özellikler:**
 
-- 6 farklı müzik aleti kategorisi
-- Her ürün için görsel ve açıklama
-- Eski ve yeni fiyat gösterimi
-- "Satın Al" butonu
-- Grid layout ile düzenli görünüm
+- Bootstrap Card component'i ile ürün kartları
+- 3 farklı müzik aleti kategorisi (Gitar, Piyano, Flüt)
+- Her kategori için 3 ürün
+- Bootstrap Grid System ile responsive layout
+- Her ürün kartında görsel ve açıklama
+- Bootstrap Button component'i ile "Satın Al" butonları
 
 **Ürünler:**
 
-- Gitar: 3.500₺ → 2.800₺
-- Davul: 8.500₺ → 6.800₺
-- Piyano: 15.000₺ → 12.000₺
-- Keman: 4.200₺ → 3.200₺
-- Saksafon: 12.000₺ → 9.500₺
-- Flüt: 2.500₺ → 1.900₺
+**Gitar Kategorisi:**
+- Akustik Gitar
+- Elektro Gitar
+- Klasik Gitar
+
+**Piyano Kategorisi:**
+- Akustik Piyano
+- Dijital Piyano
+- Kuyruklu Piyano
+
+**Flüt Kategorisi:**
+- Blok Flüt
+- Pan Flüt
+- Yan Flüt
 
 ### 3. Hakkımızda Sayfası (About Us Page)
 
@@ -91,27 +104,28 @@ Hakkımızda sayfası, şirketin kuruluş hikayesi, vizyonu ve misyonu hakkında
 
 ## 🎨 Tasarım Özellikleri
 
+### Bootstrap Components Kullanımı
+
+- **Navbar**: Responsive navigasyon menüsü
+- **Cards**: Ürün kartları için card component'i
+- **Grid System**: 12 kolonlu responsive grid yapısı
+- **Buttons**: Primary ve secondary button stilleri
+- **Badges**: Ürün fiyatları için badge kullanımı
+- **Container**: Responsive container yapısı
+
+### Bootstrap Utility Classes
+
+- Spacing utilities (margin, padding)
+- Color utilities (text, background)
+- Display utilities (flex, grid)
+- Responsive breakpoints (sm, md, lg, xl, xxl)
+
 ### Renk Paleti
 
-- Ana Başlık: #c41e3a (Kırmızı)
-- H2 Başlıklar: #8b008b (Mor)
-- H3 Başlıklar: #ff8c00 (Turuncu)
-- Linkler: #0066cc (Mavi)
-- Arka Plan: #e8f4f8 (Açık Mavi)
-
-### Tipografi
-
-- Font Ailesi: Arial, sans-serif
-- Ana Başlık: 2.5em, bold
-- H2 Başlıklar: 1.8em, bold
-- H3 Başlıklar: 1.5em, bold
-
-### Layout
-
-- Maksimum Genişlik: 800px
-- Padding: 30px
-- Border Radius: 8px
-- Box Shadow: Yumuşak gölge efekti
+- Bootstrap'in varsayılan renk sistemi kullanılmıştır
+- Primary: Bootstrap primary color
+- Secondary: Bootstrap secondary color
+- Custom colors: Gerekli yerlerde özel renkler
 
 ## 🚀 Kullanım
 
@@ -128,13 +142,14 @@ Hakkımızda sayfası, şirketin kuruluş hikayesi, vizyonu ve misyonu hakkında
 - Türkçe dil desteği (`lang="tr"`)
 - Responsive meta etiketleri
 
-### CSS Özellikleri
+### Bootstrap Özellikleri
 
-- CSS Reset ile başlangıç
-- Flexbox layout kullanımı
-- Box-shadow ve border-radius ile modern görünüm
-- Hover efektleri
-- Responsive tasarım
+- Bootstrap 5 CDN entegrasyonu
+- Grid system ile responsive layout
+- Bootstrap component'leri (Navbar, Cards, Buttons)
+- Utility classes ile hızlı stil verme
+- Responsive breakpoints kullanımı
+- Custom CSS ile Bootstrap'i özelleştirme
 
 ## 👨‍💻 Geliştirici
 
@@ -149,3 +164,13 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 ---
 
 **Not:** Bu proje Patika.dev Bootstrap eğitimi kapsamında hazırlanmıştır.
+
+## 📚 Bootstrap Öğrenilenler
+
+- Bootstrap 5 kurulumu ve CDN kullanımı
+- Grid System ve responsive breakpoints
+- Navbar component'i ve responsive menü
+- Card component'i ile ürün kartları
+- Button ve Badge component'leri
+- Utility classes kullanımı
+- Custom CSS ile Bootstrap'i özelleştirme
