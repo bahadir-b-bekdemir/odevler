@@ -1,12 +1,10 @@
 # Google Ana Sayfası Klonu - CSS Ödev 3
 
-> ⚠️ **Bu proje eğitim amaçlıdır.**
+Bu proje, Patika.dev CSS eğitimi kapsamında geliştirilmiş bir Google ana sayfası klonudur. Site, HTML ve CSS kullanılarak oluşturulmuş, güncel Google ana sayfasının görsel bir benzer kopyasını sunmaktadır.
 
-**Eğitim Amaçlıdır**: Bu proje, Patika.dev CSS eğitimi kapsamında geliştirilmiş bir Google ana sayfası klonudur. Site, HTML ve CSS kullanılarak oluşturulmuş, güncel Google ana sayfasının görsel bir benzer kopyasını sunmaktadır. Bu proje tamamen eğitim amaçlıdır.
+> ⚠️ **Bu proje tamamen eğitim amaçlıdır.**
 
 ## 📋 Proje Hakkında
-
-**⚠️ Önemli Not**: Bu proje tamamen eğitim amaçlıdır.
 
 Google Ana Sayfası Klonu, Google'ın güncel ana sayfasının görsel ve yapısal bir kopyasını oluşturmaktadır. Bu proje, modern web tasarım tekniklerini öğrenmek isteyen öğrenciler için eğitim amaçlı hazırlanmıştır. Flexbox layout, modern CSS özellikleri ve responsive tasarım prensipleri kullanılmıştır.
 
@@ -32,7 +30,8 @@ patika.dev_css_odev_3_google_anasayfa/
 │
 ├── images/
 │   ├── logo.png          # Google logosu
-│   └── voicelogo.png     # Sesle arama ikonu
+│   ├── voicelogo.png     # Sesle arama ikonu
+│   └── kod_google.png    # Sayfa görseli
 │
 ├── css/
 │   └── style.css         # CSS stilleri
@@ -50,25 +49,25 @@ patika.dev_css_odev_3_google_anasayfa/
 1. **Üst Navigasyon (Header)**
    - Sol taraf: "About" ve "Store" linkleri
    - Sağ taraf: "Gmail", "Images", Apps ikonu (9 noktalı grid) ve "Sign in" butonu
-   - Mavi arka planlı Sign in butonu (#1a73e8)
+   - Mavi arka planlı Sign in butonu (`#1a73e8`)
 
 2. **Ana İçerik (Main Content)**
    - **Google Logo**: Sayfanın merkezinde, 272x92px boyutunda
    - **Arama Kutusu**: 
-     - Yuvarlatılmış köşeler (border-radius: 24px)
+     - Yuvarlatılmış köşeler (`border-radius: 24px`)
      - Sol tarafta arama ikonu (büyüteç)
      - Sağ tarafta sesle arama ikonu (mikrofon)
      - Hover ve focus durumlarında gölge efektleri
    - **Arama Butonları**:
      - "Google Search" butonu
      - "I'm Feeling Lucky" butonu
-     - Açık gri arka plan (#f8f9fa)
+     - Açık gri arka plan (`#f8f9fa`)
      - Hover efektleri ile interaktif deneyim
 
 3. **Footer (Alt Bilgi Bölümü)**
    - Sol taraf: "Advertising", "Business", "How Search works" linkleri
    - Sağ taraf: "Privacy", "Terms", "Settings" linkleri
-   - Açık gri arka plan (#f2f2f2)
+   - Açık gri arka plan (`#f2f2f2`)
 
 ## 🎨 Tasarım Özellikleri
 
@@ -147,29 +146,6 @@ patika.dev_css_odev_3_google_anasayfa/
 - **Fixed Footer**: Sayfa kaydırılsa bile alt kısımda sabit kalır
 - **Responsive Breakpoints**: 600px altındaki ekranlar için özel stiller
 
-### Kullanılan CSS Özellikleri
-
-- `display: flex` - Flexbox layout
-- `justify-content` - Yatay hizalama
-- `align-items` - Dikey hizalama
-- `border-radius` - Yuvarlatılmış köşeler
-- `box-shadow` - Gölge efektleri
-- `position: fixed` - Sabit pozisyon
-- `hover` - Fare ile üzerine gelme efektleri
-- `focus-within` - Odaklanma durumu
-- `media queries` - Responsive tasarım
-
-## 🔧 Özelleştirme
-
-CSS dosyasındaki değerleri değiştirerek renkleri, fontları ve düzeni özelleştirebilirsiniz:
-
-- `css/style.css` dosyasını düzenleyin
-- Renk kodlarını değiştirin (`#1a73e8`, `#f8f9fa`, vb.)
-- Font ailesini güncelleyin (`Arial, sans-serif`)
-- Padding ve margin değerlerini ayarlayın
-- Border radius değerlerini değiştirin
-- Box shadow değerlerini özelleştirin
-
 ## 📚 Öğrenilen CSS Konuları
 
 Bu projede aşağıdaki CSS konuları uygulanmıştır:
@@ -185,7 +161,18 @@ Bu projede aşağıdaki CSS konuları uygulanmıştır:
 9. **Border Radius**: Yuvarlatılmış köşeler
 10. **Responsive Design**: Media queries ile mobil uyumluluk
 
-## 🎓 Eğitim Kaynakları
+## 🔧 Özelleştirme
+
+CSS dosyasındaki değerleri değiştirerek renkleri, fontları ve düzeni özelleştirebilirsiniz:
+
+- `css/style.css` dosyasını düzenleyin
+- Renk kodlarını değiştirin (`#1a73e8`, `#f8f9fa`, vb.)
+- Font ailesini güncelleyin (`Arial, sans-serif`)
+- Padding ve margin değerlerini ayarlayın
+- Border radius değerlerini değiştirin
+- Box shadow değerlerini özelleştirin
+
+## 📚 Kaynaklar
 
 Bu projede kullanılan teknikler hakkında daha fazla bilgi için:
 
@@ -210,5 +197,5 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 ## 🔗 Referanslar
 
 Bu proje, Google'ın resmi ana sayfasından esinlenilerek oluşturulmuştur:
-- **Google Ana Sayfa**: [https://www.google.com/](https://www.google.com/)
 
+- **Google Ana Sayfa**: [https://www.google.com/](https://www.google.com/)

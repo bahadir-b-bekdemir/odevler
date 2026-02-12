@@ -51,7 +51,6 @@ patika.dev_bootstrap_odev_1_muzik_dukkanim/
 Ana sayfa, ziyaretçileri karşılayan hoş geldiniz mesajı ve sitede bulunan müzik aletlerinin listesini içerir. Sayfa, temiz ve sade bir tasarıma sahiptir.
 
 **Özellikler:**
-
 - Bootstrap Navbar ile navigasyon menüsü
 - Hoş geldiniz mesajı
 - Müzik aletleri kategorileri (Gitar, Piyano, Flüt)
@@ -65,7 +64,6 @@ Ana sayfa, ziyaretçileri karşılayan hoş geldiniz mesajı ve sitede bulunan m
 Ürünler sayfası, sitede satılan tüm müzik aletlerini kart formatında gösterir. Her ürün kartında görsel, açıklama, eski fiyat, indirimli fiyat ve "Satın Al" butonu bulunur.
 
 **Özellikler:**
-
 - Bootstrap Card component'i ile ürün kartları
 - 3 farklı müzik aleti kategorisi (Gitar, Piyano, Flüt)
 - Her kategori için 3 ürün
@@ -97,7 +95,6 @@ Ana sayfa, ziyaretçileri karşılayan hoş geldiniz mesajı ve sitede bulunan m
 Hakkımızda sayfası, şirketin kuruluş hikayesi, vizyonu ve misyonu hakkında bilgiler içerir.
 
 **İçerik:**
-
 - Şirket hakkında bilgi (2010'da kuruldu)
 - Vizyonumuz: Müziği herkese erişilebilir kılmak
 - Misyonumuz: Kaliteli ürünler ve profesyonel hizmet sunmak
@@ -151,9 +148,24 @@ Hakkımızda sayfası, şirketin kuruluş hikayesi, vizyonu ve misyonu hakkında
 - Responsive breakpoints kullanımı
 - Custom CSS ile Bootstrap'i özelleştirme
 
+## 📚 Öğrenilen Bootstrap Konuları
+
+Bu projede aşağıdaki Bootstrap konuları uygulanmıştır:
+
+1. **Bootstrap 5 Kurulumu**: CDN kullanımı
+2. **Grid System**: 12 kolonlu responsive grid yapısı
+3. **Responsive Breakpoints**: sm, md, lg, xl, xxl
+4. **Navbar Component**: Responsive navigasyon menüsü
+5. **Card Component**: Ürün kartları için card kullanımı
+6. **Button Component**: Primary ve secondary button stilleri
+7. **Badge Component**: Ürün fiyatları için badge kullanımı
+8. **Utility Classes**: Spacing, color, display utilities
+9. **Container System**: Responsive container yapısı
+10. **Custom CSS**: Bootstrap'i özelleştirme
+
 ## 👨‍💻 Geliştirici
 
-Bahadır B. Bekdemir
+**Bahadır B. Bekdemir**
 
 Bu proje eğitim amaçlı geliştirilmiştir.
 
@@ -163,14 +175,4 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 
 ---
 
-**Not:** Bu proje Patika.dev Bootstrap eğitimi kapsamında hazırlanmıştır.
-
-## 📚 Bootstrap Öğrenilenler
-
-- Bootstrap 5 kurulumu ve CDN kullanımı
-- Grid System ve responsive breakpoints
-- Navbar component'i ve responsive menü
-- Card component'i ile ürün kartları
-- Button ve Badge component'leri
-- Utility classes kullanımı
-- Custom CSS ile Bootstrap'i özelleştirme
+**Not**: Bu proje Patika.dev Bootstrap eğitimi kapsamında hazırlanmıştır.

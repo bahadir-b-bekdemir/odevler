@@ -16,13 +16,13 @@ Müzik Dükkanım, müzik severlere kaliteli ve uygun fiyatlı müzik aletleri s
 ## 📁 Proje Yapısı
 
 ```
-patika.dev_css_odev_1/
+patika.dev_css_odev_1_muzik_dukkanim/
 │
 ├── index.html          # Ana sayfa
 ├── products.html       # Ürünler sayfası
-├── about-us.html      # Hakkımızda sayfası
-├── style.css          # Stil dosyası
-├── images/            # Ürün görselleri ve ekran görüntüleri
+├── about-us.html       # Hakkımızda sayfası
+├── style.css           # Stil dosyası
+├── images/             # Ürün görselleri ve ekran görüntüleri
 │   ├── anasayfa.png
 │   ├── ürünlerimiz.png
 │   ├── hakkımızda.png
@@ -32,7 +32,7 @@ patika.dev_css_odev_1/
 │   ├── keman.jpg
 │   ├── saksafon.jpg
 │   └── flüt.jpg
-└── README.md          # Proje dokümantasyonu
+└── README.md           # Proje dokümantasyonu
 ```
 
 ## 🖼️ Ekran Görüntüleri
@@ -83,6 +83,7 @@ Hakkımızda sayfası, şirketin kuruluş hikayesi, vizyonu ve misyonu hakkında
 ## 🎨 Tasarım Özellikleri
 
 ### Renk Paleti
+
 - **Ana Başlık**: `#c41e3a` (Kırmızı)
 - **H2 Başlıklar**: `#8b008b` (Mor)
 - **H3 Başlıklar**: `#ff8c00` (Turuncu)
@@ -90,12 +91,14 @@ Hakkımızda sayfası, şirketin kuruluş hikayesi, vizyonu ve misyonu hakkında
 - **Arka Plan**: `#e8f4f8` (Açık Mavi)
 
 ### Tipografi
+
 - **Font Ailesi**: Arial, sans-serif
 - **Ana Başlık**: 2.5em, bold
 - **H2 Başlıklar**: 1.8em, bold
 - **H3 Başlıklar**: 1.5em, bold
 
 ### Layout
+
 - **Maksimum Genişlik**: 800px
 - **Padding**: 30px
 - **Border Radius**: 8px
@@ -110,17 +113,33 @@ Hakkımızda sayfası, şirketin kuruluş hikayesi, vizyonu ve misyonu hakkında
 ## 📝 Teknik Detaylar
 
 ### HTML Yapısı
+
 - Semantik HTML5 etiketleri kullanılmıştır
 - `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>` gibi yapısal etiketler
 - Türkçe dil desteği (`lang="tr"`)
 - Responsive meta etiketleri
 
 ### CSS Özellikleri
+
 - CSS Reset ile başlangıç
 - Flexbox layout kullanımı
 - Box-shadow ve border-radius ile modern görünüm
 - Hover efektleri
 - Responsive tasarım
+
+## 📚 Öğrenilen CSS Konuları
+
+Bu projede aşağıdaki CSS konuları uygulanmıştır:
+
+1. **CSS Reset**: Varsayılan tarayıcı stillerini sıfırlama
+2. **Flexbox Layout**: Modern esnek düzen sistemi
+3. **Box Model**: Margin, padding, border kullanımı
+4. **Typography**: Font family, size, weight, color
+5. **Colors**: Hex renk formatları
+6. **Shadows**: Box-shadow efektleri
+7. **Border Radius**: Yuvarlatılmış köşeler
+8. **Hover Effects**: Interaktif kullanıcı deneyimi
+9. **Responsive Design**: Mobil uyumluluk
 
 ## 👨‍💻 Geliştirici
 
@@ -135,4 +154,3 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 ---
 
 **Not**: Bu proje Patika.dev CSS eğitimi kapsamında hazırlanmıştır.
-

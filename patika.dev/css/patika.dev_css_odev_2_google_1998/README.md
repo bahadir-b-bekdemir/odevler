@@ -1,12 +1,10 @@
 # Google 1998 Ana Sayfası - CSS Ödev 2
 
-> ⚠️ **Bu proje eğitim amaçlıdır.**
+Bu proje, Patika.dev CSS eğitimi kapsamında geliştirilmiş bir Google 1998 ana sayfası klonudur. Site, HTML ve CSS kullanılarak oluşturulmuş, orijinal 1998 Google tasarımının sadık bir benzer kopyasını sunmaktadır.
 
-**Eğitim Amaçlıdır**: Bu proje, Patika.dev CSS eğitimi kapsamında geliştirilmiş bir Google 1998 ana sayfası klonudur. Site, HTML ve CSS kullanılarak oluşturulmuş, orijinal 1998 Google tasarımının sadık bir benzer kopyasını sunmaktadır. Bu proje tamamen eğitim amaçlıdır.
+> ⚠️ **Bu proje tamamen eğitim amaçlıdır.**
 
 ## 📋 Proje Hakkında
-
-**⚠️ Önemli Not**: Bu proje tamamen eğitim amaçlıdır.
 
 Google 1998 Ana Sayfası Klonu, Google'ın 1998 yılındaki ilk ana sayfasının görsel ve yapısal bir kopyasını oluşturmaktadır. Bu proje, Wayback Machine'deki orijinal sayfadan esinlenilerek geliştirilmiş olup, nostaljik web tasarımının önemli bir örneğini sunmaktadır. Proje, CSS ve HTML öğrenmek isteyen öğrenciler için eğitim amaçlı hazırlanmıştır.
 
@@ -30,7 +28,7 @@ patika.dev_css_odev_2_google_1998/
 │
 ├── img/
 │   ├── google.jpg          # Google logosu (351x113px)
-│   └── index.png           # Sayfa görseli
+│   └── index.png          # Sayfa görseli
 │
 ├── index.html              # Ana HTML dosyası
 ├── index.css               # CSS stilleri
@@ -137,6 +135,20 @@ patika.dev_css_odev_2_google_1998/
 - **Logo Ortalama**: Margin auto ile merkez hizalama
 - **Responsive Tablo**: 90% genişlik ile esnek yapı
 
+## 📚 Öğrenilen CSS Konuları
+
+Bu projede aşağıdaki CSS konuları uygulanmıştır:
+
+1. **CSS Reset**: Varsayılan tarayıcı stillerini sıfırlama
+2. **Table Layout**: Tablo tabanlı düzen sistemi
+3. **Border Spacing**: Tablo hücreleri arası boşluk
+4. **Attribute Selectors**: Özellik seçicileri (`td[bgcolor]`)
+5. **Color Management**: Hex renk formatları
+6. **Typography**: Font family, size, weight
+7. **Hover Effects**: Link ve buton hover efektleri
+8. **Form Styling**: Input ve button stilleri
+9. **Legacy HTML Support**: Eski HTML etiketleri ile uyumluluk
+
 ## 🔧 Özelleştirme
 
 CSS dosyasındaki değerleri değiştirerek renkleri, fontları ve düzeni özelleştirebilirsiniz:
@@ -150,6 +162,7 @@ CSS dosyasındaki değerleri değiştirerek renkleri, fontları ve düzeni özel
 ## 📚 Kaynaklar
 
 Bu proje, Wayback Machine'deki orijinal 1998 Google ana sayfasından esinlenilerek oluşturulmuştur:
+
 - **Orijinal Sayfa (İlk Görüntü)**: [Wayback Machine - Google 1998](https://web.archive.org/web/19981202230410if_/http://www.google.com/)
 - **Arşiv Sayfası**: [Wayback Machine - Google 1998](https://web.archive.org/web/19981202230410/http://www.google.com/)
 
